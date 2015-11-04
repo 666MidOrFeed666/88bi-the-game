@@ -111,6 +111,7 @@ scr_knockback();
             <kind>1</kind>
             <string>depth = -y;
 //draw_self();
+draw_set_alpha(1);
 draw_sprite(obj_jogador.atkvisual,image_index,x,y);
 </string>
           </argument>

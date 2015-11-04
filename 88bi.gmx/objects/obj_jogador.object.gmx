@@ -39,7 +39,7 @@ atk = 1; // dano
 spd = 3; // velocidade de movimento.
 
 //itens
-firecrown  = 0;
+firecrown  = -1;
 
 phy_fixed_rotation = true;
 instance_create (x,y,bullet_spwner);
@@ -89,9 +89,12 @@ instance_create (x,y,bullet_spwner);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_fire_crown();
-scr_player_move();
+            <string>scr_player_move();
 scr_die();
+
+if firecrown != 1 {
+    scr_fire_crown();
+}
 
 </string>
           </argument>
@@ -187,11 +190,14 @@ scr_die();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>draw_set_alpha(1);
+draw_self();
 if vida == true {
     draw_sprite(player_sombra,image_index,obj_jogador.x,obj_jogador.y + 9);
 }
-draw_sprite(spr_fire_crown,image_index,obj_jogador.x,obj_jogador.y - 8);
+if (firecrown != -1){
+    draw_sprite(scr_get_item_value(firecrown,'sprite'),image_index,obj_jogador.x,obj_jogador.y - 8);
+}
 </string>
           </argument>
         </arguments>

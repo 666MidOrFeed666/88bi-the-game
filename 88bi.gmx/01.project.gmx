@@ -72,6 +72,8 @@
     <scripts name="itens">
       <script>scripts\scr_script_item.gml</script>
       <script>scripts\scr_fire_crown.gml</script>
+      <script>scripts\scr_item_db.gml</script>
+      <script>scripts\scr_get_item_value.gml</script>
     </scripts>
     <scripts name="text">
       <script>scripts\scr_textbox.gml</script>
@@ -83,6 +85,11 @@
     <font>fonts\fn_message_end</font>
   </fonts>
   <objects name="objects">
+    <objects name="objitens">
+      <object>objects\obj_item_class</object>
+      <object>objects\obj_fire_crown</object>
+      <object>objects\obj_items</object>
+    </objects>
     <objects name="objfase">
       <object>objects\wall</object>
       <object>objects\obj_chest</object>
@@ -90,6 +97,9 @@
       <object>objects\obj_spw</object>
       <object>objects\obj_bonefire</object>
       <object>objects\obj_door</object>
+      <object>objects\obj_game_control</object>
+      <object>objects\obj_box_inv</object>
+      <object>objects\obj_helm_box</object>
     </objects>
     <objects name="objenemy">
       <object>objects\obj_slime</object>
