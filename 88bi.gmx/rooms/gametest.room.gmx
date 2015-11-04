@@ -143,6 +143,7 @@
     <instance objName="obj_fire_crown" x="96" y="288" name="inst_2B6093F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_helm_box" x="32" y="32" name="inst_DA7012CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_item_class" x="160" y="288" name="inst_F84E82C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lobo" x="544" y="64" name="inst_75003668" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

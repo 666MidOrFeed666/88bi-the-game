@@ -37,6 +37,9 @@
         <sprite>sprites\slime</sprite>
         <sprite>sprites\spr_slime_dead</sprite>
       </sprites>
+      <sprites name="lobo">
+        <sprite>sprites\spr_lobo_teste</sprite>
+      </sprites>
     </sprites>
     <sprites name="sprataques">
       <sprite>sprites\spr_atk_ar</sprite>
@@ -60,6 +63,10 @@
     <scripts name="enemyscr">
       <script>scripts\scr_enemy_idle.gml</script>
       <script>scripts\scr_enemy_hunt.gml</script>
+      <scripts name="scrlobo">
+        <script>scripts\scr_lobo_ai.gml</script>
+        <script>scripts\scr_lobo_pulo.gml</script>
+      </scripts>
     </scripts>
     <scripts name="move">
       <script>scripts\scr_player_move.gml</script>
@@ -107,6 +114,7 @@
       <object>objects\obj_bones</object>
       <object>objects\obj_slime_dead</object>
       <object>objects\obj_bone_dead</object>
+      <object>objects\obj_lobo</object>
     </objects>
     <objects name="objjogador">
       <object>objects\obj_view</object>
