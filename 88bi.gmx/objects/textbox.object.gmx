@@ -113,9 +113,9 @@ scr_textbox("Title!",text[i],show[i],c_white,c_black,0.8,"Click Enter to Continu
             <kind>1</kind>
             <string>if show[i]=true
 {
-	if text[i]!=''{i+=1;}
-	if text[i]!=''{show[i]=true} else {show[i]=false}
-	show[i-1]=false
+if text[i]!=''{i+=1;}
+if text[i]!=''{show[i]=true} else {show[i]=false}
+show[i-1]=false
 }
 </string>
           </argument>

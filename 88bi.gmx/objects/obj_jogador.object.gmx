@@ -92,7 +92,7 @@ instance_create (x,y,bullet_spwner);
             <string>scr_player_move();
 scr_die();
 
-if firecrown != 1 {
+if firecrown != -1 {
     scr_fire_crown();
 }
 
@@ -198,6 +198,29 @@ if vida == true {
 if (firecrown != -1){
     draw_sprite(scr_get_item_value(firecrown,'sprite'),image_index,obj_jogador.x,obj_jogador.y - 8);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="80">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>game_restart();
 </string>
           </argument>
         </arguments>
