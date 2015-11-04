@@ -108,10 +108,11 @@ if (item != -1 &amp;&amp; global.game_state == 'pause') {
             <string>/// desenha o inventário e os itens
 if (global.game_state == 'pause') {
     draw_set_alpha(.25);
-    draw_roundrect(view_xview[0]+xstart, view_yview[0]+ystart, view_xview[0]+xstart+32, view_yview[0]+ystart+32, false);
+    draw_roundrect(view_xview[0]+xstart-16, view_yview[0]+ystart-16, view_xview[0]+xstart+16, view_yview[0]+ystart+16, false);
+    //draw_sprite(spr_inventory,0,x,y);
+    draw_set_alpha(1);
     if (item != -1){
-        draw_set_alpha(1);
-        draw_sprite(object_get_sprite(item), 0, view_xview[0]+xstart+16, view_yview[0]+ystart+16);
+        draw_sprite(object_get_sprite(item), 0, view_xview[0]+xstart, view_yview[0]+ystart);
     }
 }
 </string>

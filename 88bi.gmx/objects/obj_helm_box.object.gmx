@@ -52,7 +52,6 @@ type = 'helm';
           <argument>
             <kind>1</kind>
             <string>///capacete
-event_inherited();
 obj_jogador.helm = item;
 </string>
           </argument>
@@ -78,7 +77,7 @@ obj_jogador.helm = item;
             <kind>1</kind>
             <string>/// desenha o inventário e os itens
 if (global.game_state == 'pause'){
-    draw_sprite_ext(spr_fire_crown,0,view_xview[0]+xstart+16,view_yview[0]+ystart+16,1,1,0,c_black,0.25);
+    draw_sprite_ext(spr_fire_crown,0,view_xview[0]+xstart,view_yview[0]+ystart,1,1,0,c_black,0.25);
 }
 event_inherited(); 
 </string>

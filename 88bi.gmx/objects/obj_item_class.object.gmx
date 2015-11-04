@@ -53,8 +53,7 @@ if(global.item == -1){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(1);
-image_speed = 0;
+            <string>image_speed = 0;
 draw_self();
 </string>
           </argument>
@@ -62,7 +61,7 @@ draw_self();
       </action>
     </event>
   </events>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
@@ -73,5 +72,8 @@ draw_self();
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>10,10</point>
+    <point>10,10</point>
+  </PhysicsShapePoints>
 </object>

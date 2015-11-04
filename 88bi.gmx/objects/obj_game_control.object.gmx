@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.game_state = 'run';
+            <string>///variavel item
+global.game_state = 'run';
 global.item = -1;
 
 </string>
@@ -56,7 +57,7 @@ if (global.item != -1){
     if(instance_place(mouse_x,mouse_y, obj_box_inv) &amp;&amp; global.game_state = 'pause'){
         var box = instance_place(mouse_x,mouse_y, obj_box_inv);
         //Checa se o slot do inventário está vazio
-        if (box.item == -1 &amp;&amp; (box.type == scr_get_item_value(global.item, 'type' ) || box.type == '' )){   
+        if (box.item == -1){ //&amp;&amp; (box.type == scr_get_item_value(global.item, 'type') || box.type == '' )){   
             //Coloca o item no inventário
             box.item = global.item;
             global.item = -1;
