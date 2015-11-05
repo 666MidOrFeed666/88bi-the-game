@@ -110,7 +110,7 @@ if (global.game_state == 'pause') {
     draw_roundrect(view_xview[0]+xstart-16, view_yview[0]+ystart-16, view_xview[0]+xstart+16, view_yview[0]+ystart+16, false);
     draw_set_alpha(1);
     if (item != -1){
-        draw_sprite(object_get_sprite(item), 0, view_xview[0]+xstart, view_yview[0]+ystart);
+        draw_sprite(object_get_sprite(item), 0, view_xview[0]+xstart, view_yview[0]+ystart);     
     }
 }
 </string>

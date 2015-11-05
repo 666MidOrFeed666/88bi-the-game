@@ -89,7 +89,6 @@
     <objects name="objitens">
       <object>objects\obj_item_class</object>
       <object>objects\obj_fire_crown</object>
-      <object>objects\obj_items</object>
       <object>objects\obj_carne</object>
       <object>objects\obj_coroa</object>
     </objects>
@@ -103,6 +102,7 @@
       <object>objects\obj_game_control</object>
       <object>objects\obj_box_inv</object>
       <object>objects\obj_helm_box</object>
+      <object>objects\obj_items</object>
     </objects>
     <objects name="objenemy">
       <object>objects\obj_slime</object>
