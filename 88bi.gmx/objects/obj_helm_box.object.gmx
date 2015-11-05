@@ -52,7 +52,9 @@ type = 'helm';
           <argument>
             <kind>1</kind>
             <string>///capacete
-obj_jogador.helm = item;
+obj_jogador.firecrown = item;
+obj_jogador.coroa = item;
+
 </string>
           </argument>
         </arguments>

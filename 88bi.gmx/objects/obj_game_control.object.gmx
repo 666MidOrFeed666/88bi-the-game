@@ -54,10 +54,11 @@ global.item = -1;
             <string>/// Drag and drop inventário
 
 if (global.item != -1){
-    if(instance_place(mouse_x,mouse_y, obj_box_inv) &amp;&amp; global.game_state = 'pause'){
-        var box = instance_place(mouse_x,mouse_y, obj_box_inv);
-        //Checa se o slot do inventário está vazio
-        if (box.item == -1){ //&amp;&amp; (box.type == scr_get_item_value(global.item, 'type') || box.type == '' )){   
+    if instance_position(mouse_x,mouse_y, obj_box_inv) &amp;&amp; global.game_state = 'pause'{
+        var box = instance_position(mouse_x,mouse_y,obj_box_inv);
+       
+         //Checa se o slot do inventário está vazio
+        if box.item == -1 &amp;&amp; box.type == scr_get_item_value(global.item,'type') or box.type == '' {   
             //Coloca o item no inventário
             box.item = global.item;
             global.item = -1;
@@ -123,17 +124,16 @@ if(global.item != -1){
           <argument>
             <kind>1</kind>
             <string>///Pause
-
-    switch (global.game_state){
-        case 'run':
-            global.game_state = 'pause';
-            break;
-        case 'pause':
-            global.game_state = 'run';
-            break;
-        default:
-            break;
-    }
+switch (global.game_state){
+    case 'run':
+        global.game_state = 'pause';
+        break;
+    case 'pause':
+        global.game_state = 'run';
+        break;
+    default:
+        break;
+}
 </string>
           </argument>
         </arguments>
