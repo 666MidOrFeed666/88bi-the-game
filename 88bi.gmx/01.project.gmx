@@ -53,6 +53,7 @@
     </sprites>
     <sprites name="equips">
       <sprite>sprites\spr_fire_crown</sprite>
+      <sprite>sprites\spr_coroa</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -95,7 +96,8 @@
     <objects name="objitens">
       <object>objects\obj_item_class</object>
       <object>objects\obj_fire_crown</object>
-      <object>objects\obj_items</object>
+      <object>objects\obj_carne</object>
+      <object>objects\obj_coroa</object>
     </objects>
     <objects name="objfase">
       <object>objects\wall</object>
@@ -107,6 +109,7 @@
       <object>objects\obj_game_control</object>
       <object>objects\obj_box_inv</object>
       <object>objects\obj_helm_box</object>
+      <object>objects\obj_items</object>
     </objects>
     <objects name="objenemy">
       <object>objects\obj_slime</object>

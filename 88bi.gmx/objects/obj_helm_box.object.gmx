@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>/// variavel item
-
 item = -1;
 type = 'helm';
 </string>
@@ -51,9 +50,21 @@ type = 'helm';
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///capacete
-event_inherited();
-obj_jogador.helm = item;
+            <string>//equipa os itens
+if item != -1{
+    //coroa
+    if (object_get_sprite(item)) == spr_coroa{
+        obj_jogador.coroa = 1;      
+    }
+        //firecrown
+    if (object_get_sprite(item)) == spr_fire_crown{
+        obj_jogador.firecrown = 1;
+    }
+}
+if item = -1{
+    obj_jogador.firecrown = -1;
+    obj_jogador.coroa = -1;
+}        
 </string>
           </argument>
         </arguments>
@@ -78,7 +89,7 @@ obj_jogador.helm = item;
             <kind>1</kind>
             <string>/// desenha o inventário e os itens
 if (global.game_state == 'pause'){
-    draw_sprite_ext(spr_fire_crown,0,view_xview[0]+xstart+16,view_yview[0]+ystart+16,1,1,0,c_black,0.25);
+    draw_sprite_ext(spr_fire_crown,0,view_xview[0]+xstart,view_yview[0]+ystart,1,1,0,c_black,0.25);
 }
 event_inherited(); 
 </string>
