@@ -47,6 +47,7 @@
       <sprite>sprites\spr_atk_spike</sprite>
       <sprite>sprites\spr_atk_blue</sprite>
       <sprite>sprites\spr_firecrown_fire</sprite>
+      <sprite>sprites\spr_atk_vazio</sprite>
     </sprites>
     <sprites name="oldman">
       <sprite>sprites\spr_oldman</sprite>
@@ -82,6 +83,7 @@
       <script>scripts\scr_fire_crown.gml</script>
       <script>scripts\scr_item_db.gml</script>
       <script>scripts\scr_get_item_value.gml</script>
+      <script>scripts\scr_atributo_zerado.gml</script>
     </scripts>
     <scripts name="text">
       <script>scripts\scr_textbox.gml</script>

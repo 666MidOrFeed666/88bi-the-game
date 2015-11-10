@@ -96,7 +96,7 @@ if instance_exists(obj_jogador){
     y = obj_jogador.y + lengthdir_y(length,dd);
 
     //cria o dano 
-     if shot &amp;&amp; obj_jogador.atked == false {
+     if shot &amp;&amp; obj_jogador.atked == false &amp;&amp; global.game_state == 'run'{
             alarm[1] = room_speed * obj_jogador.bulletdelay;
             instance_create(x,y,obj_dano);
             obj_jogador.atked = true;

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_item_class</parentName>
+  <parentName>obj_box_inv</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -51,6 +51,10 @@ type = 'magic';
           <argument>
             <kind>1</kind>
             <string>//equipa os itens
+if item = -1{
+    scr_atributo_zerado(); // zera os atributos
+}
+
 if item != -1{
     //vento
     if (object_get_sprite(item)) == spr_atk_ar{

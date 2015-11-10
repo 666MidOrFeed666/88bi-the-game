@@ -25,17 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>knockback = 1; // auto explicativo.
-bulletlife = 0; // tempo que o ataque permanece na fase.
-atkvisual = spr_atk_ar; // sprite do ataque.
-bulletdelay = 0; // rate of fire.
-bulletspd = 0; // velocidade do projetil.
-melee = true; // ataque melee ou ranged.
+            <string>obj_jogador.knockback =0;
+obj_jogador.bulletlife =0.1;
+obj_jogador.atkvisual =spr_atk_vazio;
+obj_jogador.bulletdelay =1; 
+obj_jogador.bulletspd = 1;
+obj_jogador.melee = true;
+obj_jogador.atk = 1;
 
 vida = true; // vivo ou morto ?
 hp = 3; // hit points.
 atked = false; // atacou ou não ?
-atk = 1; // dano
 spd = 3; // velocidade de movimento.
 
 //itens
