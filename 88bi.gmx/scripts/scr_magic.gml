@@ -1,12 +1,12 @@
 
 if obj_jogador.vento != -1 {
     //vento
-    obj_jogador.knockback = scr_get_item_value('vento', 'knockback');
-    obj_jogador.bulletlife = scr_get_item_value('vento', 'bulletlife');
-    obj_jogador.atkvisual = scr_get_item_value('vento', 'sprite');
-    obj_jogador.bulletdelay = scr_get_item_value('vento', 'bulletdelay');
-    obj_jogador.bulletspd = scr_get_item_value('vento', 'bulletspd');
-    obj_jogador.melee = scr_get_item_value('vento', 'melee');
+    obj_jogador.knockback =10; //scr_get_item_value('vento', 'knockback');
+    obj_jogador.bulletlife =2;// scr_get_item_value('vento', 'bulletlife');
+    obj_jogador.atkvisual =spr_atk_ar;// scr_get_item_value('vento', 'sprite');
+    obj_jogador.bulletdelay =1; //scr_get_item_value('vento', 'bulletdelay');
+    obj_jogador.bulletspd = 3;//scr_get_item_value('vento', 'bulletspd');
+    obj_jogador.melee = false;//scr_get_item_value('vento', 'melee');
 }
 
 if obj_jogador.fireball != -1{

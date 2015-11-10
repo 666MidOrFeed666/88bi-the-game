@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>knockback = 10; // auto explicativo.
-bulletlife = 0.1; // tempo que o ataque permanece na fase.
+            <string>knockback = 1; // auto explicativo.
+bulletlife = 0; // tempo que o ataque permanece na fase.
 atkvisual = spr_atk_ar; // sprite do ataque.
-bulletdelay = 1; // rate of fire.
-bulletspd = 10; // velocidade do projetil.
+bulletdelay = 0; // rate of fire.
+bulletspd = 0; // velocidade do projetil.
 melee = true; // ataque melee ou ranged.
 
 vida = true; // vivo ou morto ?
@@ -40,6 +40,13 @@ spd = 3; // velocidade de movimento.
 
 //itens
 firecrown  = -1;
+coroa = -1;
+//magia
+magia = -1;
+vento = -1;
+fireball = -1;
+spike = -1;
+water = -1;
 
 phy_fixed_rotation = true;
 instance_create (x,y,bullet_spwner);
@@ -94,6 +101,10 @@ scr_die();
 
 if firecrown != -1 {
     scr_fire_crown();
+}
+
+if magia!= -1{
+    scr_magic();
 }
 
 </string>

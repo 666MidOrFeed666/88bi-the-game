@@ -78,7 +78,7 @@
       <script>scripts\scr_knockback_enemy.gml</script>
     </scripts>
     <scripts name="itens">
-      <script>scripts\scr_script_item.gml</script>
+      <script>scripts\scr_magic.gml</script>
       <script>scripts\scr_fire_crown.gml</script>
       <script>scripts\scr_item_db.gml</script>
       <script>scripts\scr_get_item_value.gml</script>
@@ -95,9 +95,17 @@
   <objects name="objects">
     <objects name="objitens">
       <object>objects\obj_item_class</object>
-      <object>objects\obj_fire_crown</object>
       <object>objects\obj_carne</object>
-      <object>objects\obj_coroa</object>
+      <objects name="equipaveis">
+        <object>objects\obj_coroa</object>
+        <object>objects\obj_fire_crown</object>
+      </objects>
+      <objects name="magias">
+        <object>objects\obj_vento</object>
+        <object>objects\obj_fireball</object>
+        <object>objects\obj_spike</object>
+        <object>objects\obj_water</object>
+      </objects>
     </objects>
     <objects name="objfase">
       <object>objects\wall</object>
@@ -106,10 +114,11 @@
       <object>objects\obj_spw</object>
       <object>objects\obj_bonefire</object>
       <object>objects\obj_door</object>
+      <object>objects\obj_items</object>
       <object>objects\obj_game_control</object>
       <object>objects\obj_box_inv</object>
       <object>objects\obj_helm_box</object>
-      <object>objects\obj_items</object>
+      <object>objects\obj_magic_box</object>
     </objects>
     <objects name="objenemy">
       <object>objects\obj_slime</object>
