@@ -55,6 +55,7 @@
     <sprites name="equips">
       <sprite>sprites\spr_fire_crown</sprite>
       <sprite>sprites\spr_coroa</sprite>
+      <sprite>sprites\spr_capuz_inv</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -80,10 +81,13 @@
     </scripts>
     <scripts name="itens">
       <script>scripts\scr_magic.gml</script>
-      <script>scripts\scr_fire_crown.gml</script>
       <script>scripts\scr_item_db.gml</script>
       <script>scripts\scr_get_item_value.gml</script>
       <script>scripts\scr_atributo_zerado.gml</script>
+      <scripts name="efeitos dos itens">
+        <script>scripts\scr_capuzin.gml</script>
+        <script>scripts\scr_fire_crown.gml</script>
+      </scripts>
     </scripts>
     <scripts name="text">
       <script>scripts\scr_textbox.gml</script>
@@ -101,6 +105,7 @@
       <objects name="equipaveis">
         <object>objects\obj_coroa</object>
         <object>objects\obj_fire_crown</object>
+        <object>objects\obj_capuzin</object>
       </objects>
       <objects name="magias">
         <object>objects\obj_vento</object>

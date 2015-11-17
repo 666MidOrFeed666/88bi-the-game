@@ -52,7 +52,7 @@ type = 'helm';
             <kind>1</kind>
             <string>//equipa os itens
 if item != -1{
-    //coroa
+        //coroa
     if (object_get_sprite(item)) == spr_coroa{
         obj_jogador.coroa = 1;      
     }
@@ -60,10 +60,15 @@ if item != -1{
     if (object_get_sprite(item)) == spr_fire_crown{
         obj_jogador.firecrown = 1;
     }
+        //capuzin
+    if (object_get_sprite(item)) == spr_capuz_inv{
+        obj_jogador.capuzin = 1;
+    }    
 }
 if item = -1{
     obj_jogador.firecrown = -1;
     obj_jogador.coroa = -1;
+    obj_jogador.capuzin = -1;
 }        
 </string>
           </argument>

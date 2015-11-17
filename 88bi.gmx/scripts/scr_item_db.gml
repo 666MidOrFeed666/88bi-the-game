@@ -1,6 +1,13 @@
 ///scr_item_db();
 
 ///////////////////Cabeça
+
+//Capuz de invisibilidade
+capuzin = ds_map_create();
+ds_map_add(capuzin, 'sprite', spr_capuz_inv);
+ds_map_add(capuzin, 'type', 'helm');
+ds_map_add(capuzin, 'name', 'capuzin');
+
 //fire crown
 firecrown = ds_map_create();
 ds_map_add(firecrown, 'sprite', spr_fire_crown);
@@ -62,12 +69,13 @@ carne = ds_map_create();
 ds_map_add(carne, 'healing', 2);
 ds_map_add(carne, 'type', 'carne');
 
-//item database
+/////////////item database/////////////////
 global.items = ds_map_create();
 ds_map_add(global.items,'obj_carne', carne);
 //equipaveis na cabeça
 ds_map_add(global.items,'obj_fire_crown', firecrown);
 ds_map_add(global.items,'obj_coroa', coroa);
+ds_map_add(global.items,'obj_capuzin', capuzin);
 //magias
 ds_map_add(global.items,'obj_vento',vento);
 ds_map_add(global.items,'obj_fireball',fireball);
